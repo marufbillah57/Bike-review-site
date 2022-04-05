@@ -1,9 +1,9 @@
-import React from 'react';
+import MyLineChart from '../MyLineChart/MyLineChart';
 
 const Dashboard = () => {
     return (
-        <div>
-            <h2 className='text-4xl'>This is DashBoard Area.</h2>
+        <div className='container md:container mx-auto md: pt-8'>
+            <MyLineChart></MyLineChart>
         </div>
     );
 };

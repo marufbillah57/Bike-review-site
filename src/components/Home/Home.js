@@ -5,7 +5,7 @@ import Reviews from '../Reviews/Reviews';
 const Home = () => {
     const [reviews, setReviews] = useReview();
     return (
-        <div>
+        <div className='pt-12'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4  mt-5'>
             <div className='title text-left pt-20 order-2 md:order-1'>
                 <h1 className='text-4xl font-sans font-black'>Huge Yamaha test fleet confirmed for<br /> <span className='text-blue-700'>The Devitt MCN Festival</span></h1>
@@ -18,6 +18,9 @@ const Home = () => {
           </div>
           <div className='reviewsContainer flex justify-center items-center pt-20'>
              <Reviews></Reviews>
+          </div>
+          <div className='flex justify-center items-center mb-5 md:mb-8'>
+          <button className='px-5 py-3 border border-red-200 font-semibold'>Review All</button>
           </div>
         </div>
     );
